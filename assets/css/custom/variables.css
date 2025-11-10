@@ -1,0 +1,124 @@
+/* ============================================
+   主题变量配置文件
+   通过修改此文件可以快速更换网站整体风格
+   ============================================ */
+
+:root {
+  /* ========== 主色调 - 古典竹韵风格 ========== */
+  /* 古典竹韵风格：淡雅、留白、竹青色系 */
+  --primary-color: #5a8f5a;        /* 主色：竹青色（淡雅的竹叶绿） */
+  --primary-dark: #3d6b3d;         /* 深竹青色（用于深色背景） */
+  --primary-light: #8fb88f;        /* 浅竹青色 */
+  --primary-lighter: #c4dcc4;      /* 极浅竹青色（用于背景） */
+  --secondary-color: #6c757d;      /* 次色：灰色 */
+  --success-color: #5a8f5a;        /* 成功色：竹青色 */
+  --danger-color: #c45a5a;         /* 危险色：淡红色（印章等） */
+  --accent-red: #c45a5a;           /* 强调红色（印章、重要提示） */
+  --bamboo-color: #7a9d7a;         /* 竹青色（中等） */
+  --bamboo-light: #a8c5a8;         /* 浅竹青色 */
+  --bamboo-pale: #e8f0e8;          /* 极淡竹青色（背景） */
+  --rice-color: #faf8f3;           /* 米色（留白背景） */
+  --rice-warm: #f5f2eb;            /* 暖米色 */
+  --ink-color: #2c3e2c;            /* 墨色（深色文字） */
+  --ink-light: #4a5a4a;            /* 淡墨色 */
+  --warning-color: #d4a574;        /* 警告色：淡黄色 */
+  --info-color: #6b8e8e;           /* 信息色：青灰色 */
+  --light-color: #faf8f3;          /* 浅色：米色 */
+  --dark-color: #2c3e2c;           /* 深色：墨色 */
+  
+  /* 古典竹韵渐变 */
+  --bamboo-gradient-start: #5a8f5a;
+  --bamboo-gradient-end: #7a9d7a;
+  --bamboo-pale-gradient-start: #e8f0e8;
+  --bamboo-pale-gradient-end: #faf8f3;
+
+  /* ========== 中性色系统（配合竹韵风格） ========== */
+  --white: #ffffff;
+  --black: #000000;
+  --gray-50: #faf8f3;              /* 米色背景 */
+  --gray-100: #f5f2eb;             /* 暖米色 */
+  --gray-200: #e8f0e8;             /* 极淡竹青色 */
+  --gray-300: #d4ddd4;             /* 淡灰绿色 */
+  --gray-400: #b8c5b8;             /* 中灰绿色 */
+  --gray-500: #8a9a8a;             /* 灰绿色 */
+  --gray-600: #6c757d;             /* 标准灰色 */
+  --gray-700: #4a5a4a;             /* 淡墨色 */
+  --gray-800: #3d4a3d;             /* 深灰绿色 */
+  --gray-900: #2c3e2c;             /* 墨色 */
+
+  /* ========== 字体系统 ========== */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-heading: var(--font-family-base);
+  --font-size-base: 1rem;                    /* 16px */
+  --font-size-sm: 0.875rem;                  /* 14px */
+  --font-size-lg: 1.125rem;                   /* 18px */
+  --font-size-xl: 1.25rem;                    /* 20px */
+  --font-size-xxl: 1.5rem;                    /* 24px */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-base: 1.6;
+  --line-height-heading: 1.2;
+
+  /* ========== 间距系统（基于 Bootstrap 的 0.25rem 倍数） ========== */
+  --spacer: 1rem;
+  --spacer-0: 0;
+  --spacer-1: calc(var(--spacer) * 0.25);    /* 0.25rem = 4px */
+  --spacer-2: calc(var(--spacer) * 0.5);     /* 0.5rem = 8px */
+  --spacer-3: var(--spacer);                 /* 1rem = 16px */
+  --spacer-4: calc(var(--spacer) * 1.5);     /* 1.5rem = 24px */
+  --spacer-5: calc(var(--spacer) * 3);       /* 3rem = 48px */
+  --spacer-6: calc(var(--spacer) * 4);       /* 4rem = 64px */
+
+  /* ========== 响应式断点（与 Bootstrap 5 保持一致） ========== */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  /* ========== 圆角系统 ========== */
+  --border-radius: 0.375rem;                 /* 6px */
+  --border-radius-sm: 0.25rem;                /* 4px */
+  --border-radius-lg: 0.5rem;                 /* 8px */
+  --border-radius-xl: 1rem;                  /* 16px */
+  --border-radius-pill: 50rem;               /* 圆角药丸形状 */
+  --border-radius-circle: 50%;                /* 圆形 */
+
+  /* ========== 阴影系统 ========== */
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+
+  /* ========== 过渡动画 ========== */
+  --transition-base: all 0.3s ease-in-out;
+  --transition-fast: all 0.15s ease-in-out;
+  --transition-slow: all 0.5s ease-in-out;
+
+  /* ========== 布局相关 ========== */
+  --container-max-width: 1320px;
+  --header-height: 70px;
+  --top-bar-height: 40px;                    /* 顶部信息栏高度 */
+  --footer-height: auto;
+  --section-padding-y: 5rem;                 /* 区块垂直内边距 */
+
+  /* ========== Z-index 层级 ========== */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+}
+
+/* ========== 深色主题（可选，未来扩展） ========== */
+[data-theme="dark"] {
+  --primary-color: #0d6efd;
+  --dark-color: #f8f9fa;
+  --light-color: #212529;
+  /* 可根据需要扩展深色主题变量 */
+}
+

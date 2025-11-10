@@ -1,0 +1,161 @@
+/* ============================================
+   响应式样式文件
+   针对不同设备的样式调整
+   ============================================ */
+
+/* ========== 移动端优化（< 576px） ========== */
+@media (max-width: 575.98px) {
+  /* 字体大小调整 */
+  :root {
+    --font-size-base: 0.9375rem;  /* 15px */
+    --font-size-xxl: 1.25rem;      /* 20px */
+    --section-padding-y: 3rem;
+  }
+
+  /* 导航栏 */
+  .navbar-brand {
+    font-size: var(--font-size-lg);
+  }
+
+  .navbar-nav .nav-link {
+    padding: var(--spacer-2) var(--spacer-3) !important;
+  }
+
+  /* 轮播图 */
+  .carousel-caption h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  .carousel-caption p {
+    font-size: var(--font-size-base);
+  }
+
+  /* 区块标题 */
+  .section-title {
+    font-size: var(--font-size-xl);
+  }
+
+  /* 按钮 */
+  .btn {
+    padding: var(--spacer-2) var(--spacer-3);
+    font-size: var(--font-size-sm);
+  }
+
+  /* 卡片间距 */
+  .card {
+    margin-bottom: var(--spacer-3);
+  }
+
+  /* 容器内边距 */
+  .container {
+    padding-left: var(--spacer-3);
+    padding-right: var(--spacer-3);
+  }
+
+  /* 返回顶部按钮位置 */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* ========== 平板端优化（576px - 767px） ========== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  :root {
+    --section-padding-y: 4rem;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .section-title {
+    font-size: 1.375rem; /* 22px */
+  }
+}
+
+/* ========== 中等屏幕（768px - 991px） ========== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-item img {
+    height: 450px;
+  }
+
+  /* 导航栏调整 */
+  .navbar-nav .nav-link {
+    padding: var(--spacer-2) var(--spacer-2) !important;
+  }
+}
+
+/* ========== 大屏幕（992px - 1199px） ========== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* 可以添加大屏幕特定样式 */
+}
+
+/* ========== 超大屏幕（≥ 1200px） ========== */
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-max-width);
+  }
+
+  /* 可以添加超大屏幕特定样式 */
+}
+
+/* ========== 横屏模式优化 ========== */
+@media (orientation: landscape) and (max-height: 500px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .section {
+    padding: var(--spacer-4) 0;
+  }
+}
+
+/* ========== 打印样式 ========== */
+@media print {
+  .navbar,
+  .footer,
+  .back-to-top,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
+
+/* ========== 高对比度模式支持 ========== */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: #0056b3;
+    --border-radius: 0;
+  }
+
+  .card {
+    border: 2px solid var(--gray-300);
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ========== 减少动画模式支持 ========== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
