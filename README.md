@@ -66,8 +66,9 @@ python -m http.server 8000
 
 **Node.js**：
 ```bash
+cd E:\website_tongji
 npm install -g http-server
-http-server -p 8000
+http-server . -p 8000
 ```
 
 **注意**：由于使用了 `fetch` API 加载公共组件，**必须使用本地服务器运行**，不能直接双击打开 HTML 文件。
